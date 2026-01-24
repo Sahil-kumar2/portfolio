@@ -34,7 +34,7 @@ export default function App() {
                   Explore Projects
                 </a>
                 <a
-                  href="/final_resume1.pdf"
+                  href="/Sahil_Resume (2).pdf"
                   className="px-7 py-3 rounded-md border border-neutral-300 text-sm font-medium hover:bg-neutral-100 hover:-translate-y-1 transition"
                 >
                   Resume
