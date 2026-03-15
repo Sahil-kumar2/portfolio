@@ -4,15 +4,16 @@ export default function Experience() {
       company: "Rawyal",
       role: "Software Development Intern",
       period: "Jan 2026 - Present",
-      description: "Architecting backend infrastructure for multi-format document processing and API management.",
+      description:
+        "Building backend systems for multi-format document processing, asynchronous workflows, and retrieval-augmented AI experiences.",
       achievements: [
-        "Engineered a multi-format document processing pipeline supporting Office, PDF, HTML, and image transformations, reducing external API dependency by 35%.",
-        "Built asynchronous job-processing workflows in Node.js to manage parallel document conversions, decreasing request blocking time by 40% during peak workloads.",
-        "Developed Python modules for structured PDF-to-DOCX and Excel extraction, reducing manual correction effort by 30%.",
-        "Implemented secure file upload and format validation, reducing invalid file processing failures by 25%.",
-        "Designed retry handling and failure isolation logic for conversion tasks, preventing system-wide crashes under malformed inputs."
+        "Architected a scalable multi-format document processing pipeline supporting Office, PDF, HTML, and image transformations, reducing external API dependency and improving processing speed by 35%.",
+        "Designed and deployed scalable asynchronous job-processing architecture for concurrent document conversions, reducing peak request blocking time by 40% and improving system throughput.",
+        "Built a Retrieval-Augmented Generation (RAG) chatbot using LLM embeddings and Pinecone vector search, enabling contextual query answering across uploaded documents and internal knowledge bases.",
+        "Developed optimized Python-based extraction modules for structured PDF-to-DOCX and Excel conversion, reducing manual correction effort by 30%.",
+        "Implemented secure file validation, retry mechanisms, and failure isolation to prevent cascading errors during malformed inputs and high-load processing."
       ],
-      tech: ["Node.js", "Express.js", "Python", "Multer", "ImageMagick", "LibreOffice"]
+      tech: ["Node.js", "Express.js", "Python", "JavaScript", "RAG", "Pinecone", "ImageMagick", "LibreOffice"]
     }
   ];
 
@@ -39,14 +40,12 @@ export default function Experience() {
 
             <div className="text-xl text-secondary mb-4 font-medium">{exp.role}</div>
 
-            <p className="text-slate-400 mb-6 max-w-2xl leading-relaxed">
-              {exp.description}
-            </p>
+            <p className="text-slate-400 mb-6 max-w-2xl leading-relaxed">{exp.description}</p>
 
             <ul className="space-y-2 mb-6 text-slate-400">
               {exp.achievements.map((item, j) => (
                 <li key={j} className="flex items-start">
-                  <span className="text-emerald-400 mr-2 mt-1.5 text-xs">▹</span>
+                  <span className="text-emerald-400 mr-2 mt-1.5 text-xs">&gt;</span>
                   <span>{item}</span>
                 </li>
               ))}

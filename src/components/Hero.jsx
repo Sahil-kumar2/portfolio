@@ -11,7 +11,7 @@ export default function Hero() {
     <section className="min-h-screen flex items-center justify-center pt-20 pb-10 px-6 max-w-7xl mx-auto overflow-hidden">
       <div className="grid md:grid-cols-2 gap-12 items-center w-full">
         {/* Left Content */}
-        <div className={`space-y-8 transform transition-all duration-1000 ${mounted ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
+        <div className={`space-y-8 transform transition-all duration-1000 ${mounted ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}>
           <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -44,41 +44,22 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Content - Terminal */}
-        <div className={`relative hidden md:block transform transition-all duration-1000 delay-300 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent opacity-20 blur-xl rounded-xl"></div>
-          <div className="relative bg-[#0F1117] border border-white/10 rounded-xl p-6 font-mono text-sm shadow-2xl">
-            <div className="flex space-x-2 mb-4">
-              <div className="w-3 h-3 rounded-full bg-red-500/50"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
+        {/* Right Content - Profile Photo */}
+        <div className={`relative transform transition-all duration-1000 delay-300 ${mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
+          <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent opacity-20 blur-xl rounded-2xl"></div>
+          <div className="relative bg-[#0F1117] border border-white/10 rounded-2xl p-4 md:p-6 shadow-2xl space-y-4">
+            <div className="relative overflow-hidden rounded-xl border border-white/10">
+              <img
+                src="/profile-photo.png"
+                alt="Portrait of Sahil Kumar"
+                className="w-full h-[300px] md:h-[360px] object-cover object-[center_25%]"
+              />
             </div>
-            <div className="space-y-2 text-slate-300">
-              <div className="flex">
-                <span className="text-emerald-400 mr-2">➜</span>
-                <span className="text-blue-400">~</span>
-                <span className="text-slate-500 mx-2">whoami</span>
-              </div>
-              <div className="pl-4 text-emerald-300">
-                {`{`}
-                <div className="pl-4">
-                  <span className="text-purple-400">"name"</span>: <span className="text-amber-300">"Sahil Kumar"</span>,
-                </div>
-                <div className="pl-4">
-                  <span className="text-purple-400">"role"</span>: <span className="text-amber-300">"Software Engineer"</span>,
-                </div>
-                <div className="pl-4">
-                  <span className="text-purple-400">"stack"</span>: [<span className="text-amber-300">"C++"</span>, <span className="text-amber-300">"JavaScript"</span>, <span className="text-amber-300">"Node.js"</span>, <span className="text-amber-300">"Python"</span>],
-                </div>
-                <div className="pl-4">
-                  <span className="text-purple-400">"focus"</span>: <span className="text-amber-300">"Performance & Scalability"</span>,
-                </div>
-                <div className="pl-4">
-                  <span className="text-purple-400">"rating"</span>: <span className="text-amber-300">"3⭐ CodeChef"</span>
-                </div>
-                {`}`}
-              </div>
+            <div className="mt-4 flex items-center justify-between">
+              <p className="text-slate-200 font-semibold">Sahil Kumar</p>
+              <p className="text-xs tracking-wider text-emerald-400 font-mono">SOFTWARE ENGINEER</p>
             </div>
+
           </div>
         </div>
       </div>
