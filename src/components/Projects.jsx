@@ -1,35 +1,36 @@
 export default function Projects() {
   const projects = [
     {
+      title: "AI-Powered Digital Twin Platform",
+      description:
+        "Full-stack digital twin platform for real-time simulation, monitoring, and AI-powered system analysis.",
+      tech: ["Next.js", "TypeScript", "Node.js", "FastAPI", "PostgreSQL", "Redis", "Socket.io", "Pinecone"],
+      impact: "Processed 15k+ telemetry events per minute for live dashboards and analytics",
+      achievements: [
+        "Built a simulation engine supporting 100+ concurrent component simulations and high-frequency telemetry generation.",
+        "Engineered a Redis- and Socket.io-based real-time data pipeline processing 15k+ telemetry events per minute.",
+        "Integrated AI-powered anomaly detection, failure prediction, and semantic search using Pinecone and LLM reasoning.",
+        "Architected scalable backend services for telemetry ingestion, event processing, and real-time analytics."
+      ],
+      github: "https://github.com/Sahil-kumar2/AI-Powered-Digital-Twin-Platform",
+      live: "https://ai-powered-digital-twin-platform.vercel.app/"
+    },
+    {
       title: "LifeFlow",
       description:
-        "Real-time blood donation platform with geospatial donor matching, role-based authentication, and asynchronous SMS alert pipeline.",
-      tech: ["MongoDB", "Express", "React", "Node.js", "Twilio API", "JWT"],
-      impact: "50% improvement in emergency donor search performance via 2dsphere indexing",
+        "Real-time blood donation platform for donor matching and emergency request management with low-latency discovery and reliable notifications.",
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "BullMQ", "JWT"],
+      impact: "Sub-10ms nearby donor discovery and 15–30× API latency reduction in core flows",
       achievements: [
-        "Designed geospatial donor-matching system using MongoDB 2dsphere indexing",
-        "Developed role-based RESTful APIs with JWT authentication and middleware validation",
-        "Implemented async SMS alert pipeline with retry logic and failure handling",
-        "Built real-time monitoring dashboards tracking request volume and donor engagement"
+        "Implemented geolocation-based donor matching using MongoDB 2dsphere indexing for sub-10ms proximity queries.",
+        "Engineered JWT-based authentication with role-based access control for secure donor and admin workflows.",
+        "Built fault-tolerant async workflows using Redis and BullMQ for SMS and notification delivery, improving reliability in emergencies.",
+        "Optimized API paths and caching to reduce latency by 15–30× for critical endpoints."
       ],
       github: "https://github.com/Sahil-kumar2/Lifeflow",
       live: "https://lifeflow-seven.vercel.app"
     },
-    {
-      title: "FarmFresh",
-      description:
-        "Full-stack agri-commerce platform with AI-assisted crop advisory, buyer-seller workflows, and analytics dashboards.",
-      tech: ["MERN Stack", "Redux", "Cloudinary", "Gemini API", "Recharts"],
-      impact: "30% reduction in session-related user issues via persistent authentication",
-      achievements: [
-        "Developed full-stack platform supporting buyer-seller workflows with protected routes",
-        "Implemented persistent authentication and Redux state architecture",
-        "Built AI-assisted crop advisory module using structured prompt pipelines",
-        "Created analytics dashboards visualizing order trends and sales insights"
-      ],
-      github: "https://github.com/Sahil-kumar2/FarmFresh",
-      live: "https://farmfresh-omega.vercel.app"
-    }
+    
   ];
 
   return (

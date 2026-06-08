@@ -1,19 +1,30 @@
 export default function Experience() {
   const experiences = [
     {
+      company: "ModelSuite.ai",
+      role: "Software Developer Intern",
+      period: "Sep 2025 - Dec 2025",
+      description:
+        "Developed MERN-stack features, reusable React components, and frontend performance improvements for the platform.",
+      achievements: [
+        "Developed scalable MERN-stack features and modular platform architecture.",
+        "Built reusable React components and state management workflows using Zustand.",
+        "Improved application performance by reducing load times by 40% through frontend optimization and efficient API integration."
+      ],
+      tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Zustand"]
+    },
+    {
       company: "Rawyal",
       role: "Software Development Intern",
-      period: "Jan 2026 - Present",
+      period: "Jan 2026 - Apr 2026",
       description:
-        "Building backend systems for multi-format document processing, asynchronous workflows, and retrieval-augmented AI experiences.",
+        "Built scalable document processing and RAG pipelines combining async job processing, vector search, and transformation services.",
       achievements: [
-        "Architected a scalable multi-format document processing pipeline supporting Office, PDF, HTML, and image transformations, reducing external API dependency and improving processing speed by 35%.",
-        "Designed and deployed scalable asynchronous job-processing architecture for concurrent document conversions, reducing peak request blocking time by 40% and improving system throughput.",
-        "Built a Retrieval-Augmented Generation (RAG) chatbot using LLM embeddings and Pinecone vector search, enabling contextual query answering across uploaded documents and internal knowledge bases.",
-        "Developed optimized Python-based extraction modules for structured PDF-to-DOCX and Excel conversion, reducing manual correction effort by 30%.",
-        "Implemented secure file validation, retry mechanisms, and failure isolation to prevent cascading errors during malformed inputs and high-load processing."
+        "Built a scalable asynchronous document processing pipeline supporting PDF, Office, HTML, and image transformations, reducing processing latency by 35%.",
+        "Developed a distributed BullMQ-based job system with retries, concurrency control, and failure isolation, improving throughput by 40% under parallel workloads.",
+        "Engineered a RAG-based retrieval system using vector embeddings and Pinecone, enabling context-aware search across large document datasets."
       ],
-      tech: ["Node.js", "Express.js", "Python", "JavaScript", "RAG", "Pinecone", "ImageMagick", "LibreOffice"]
+      tech: ["Node.js", "Express.js", "Python", "Redis", "BullMQ", "Pinecone", "MongoDB"]
     }
   ];
 
